@@ -137,6 +137,7 @@ def contact_details(context, contact_list_details_cache):
   try:
     resource_details = []                
     for contact in get_contact_list_details():
+        details = []
         details = {
             "id": contact["_id"],
             "first_name" : contact["firstName"],
